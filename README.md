@@ -20,7 +20,7 @@ This library generates **relevancy maps** that highlight which image regions and
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/medgemma-explainer.git
+git clone https://github.com/thedatasense/medgemma-explainer.git
 cd medgemma-explainer
 
 # Install dependencies
@@ -29,7 +29,7 @@ pip install -r requirements.txt
 
 Or in Google Colab:
 ```python
-!git clone https://github.com/YOUR_USERNAME/medgemma-explainer.git
+!git clone https://github.com/thedatasense/medgemma-explainer.git
 import sys
 sys.path.insert(0, '/content/medgemma-explainer')
 
