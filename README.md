@@ -8,6 +8,8 @@ This library generates **relevancy maps** that highlight which image regions and
 
 > Chefer, H., Gur, S., & Wolf, L. (2021). *Transformer Interpretability Beyond Attention Visualization.* CVPR 2021.
 
+[Read the detailed blog post here](https://thedatasense.com/opening-the-black-box-how-to-see-what-your-vision-language-model-is-actually-looking-at?t=1768794435237)
+
 ## Key Features
 
 - **Gradient-weighted attention**: Combines attention patterns with gradient information
@@ -15,6 +17,8 @@ This library generates **relevancy maps** that highlight which image regions and
 - **Keyword search**: Automatically find and explain keywords in responses
 - **Answer span explanation**: Explain the entire generated response
 - **Medical imaging support**: Correct anatomical orientation for chest X-rays
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/thedatasense/medgemma-explainer/blob/master/tutorial_optimized.ipynb)
 
 ## Installation
 
@@ -192,7 +196,7 @@ medgemma-explainer/
 │   ├── attention_hooks.py    # Attention capture hooks
 │   └── utils.py              # Helper functions
 ├── scripts/                  # Example scripts
-├── notebooks/                # Tutorial notebooks
+├── tutorial_mem_optimized.ipynb/                # Tutorial notebook
 ├── tests/                    # Unit tests
 ├── requirements.txt
 └── README.md
@@ -208,6 +212,12 @@ When asked "Where is the remote control?", the model generates a response mentio
 
 When analyzing a chest X-ray with right middle lobe pneumonia, the relevancy map correctly highlights the patient's right lung field (left side of image).
 
+## Image Sources
+
+The X-ray image used in the example was downloaded from: [Radiopaedia](https://prod-images-static.radiopaedia.org/images/1371188/0a1f5edc85aa58d5780928cb39b08659c1fc4d6d7c7dce2f8db1d63c7c737234_big_gallery.jpeg)
+
+The cat image used in the remote example was downloaded from: [Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/e/ed/Katze_neben_TV_20201113.jpg)
+
 ## Requirements
 
 - Python 3.8+
@@ -219,16 +229,11 @@ When analyzing a chest X-ray with right middle lobe pneumonia, the relevancy map
 
 ## Citation
 
-If you use this implementation, please cite:
+If you use this work, please cite the following:
 
-```bibtex
-@inproceedings{chefer2021transformer,
-  title={Transformer interpretability beyond attention visualization},
-  author={Chefer, Hila and Gur, Shir and Wolf, Lior},
-  booktitle={CVPR},
-  year={2021}
-}
-```
+- Chefer, H., Gur, S., & Wolf, L. (2021). *Transformer Interpretability Beyond Attention Visualization.* CVPR 2021.
+- [MedGemma Explainer GitHub Repository](https://github.com/thedatasense/medgemma-explainer)
+- [Detailed Blog Post](https://thedatasense.com/opening-the-black-box-how-to-see-what-your-vision-language-model-is-actually-looking-at?t=1768794435237)
 
 ## License
 
